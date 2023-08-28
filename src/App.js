@@ -1,4 +1,5 @@
 import { Container } from 'react-bootstrap'
+import Navbar from './Component/Footer/Main/Navbar/Navbar'
 import Footer from './Component/Footer/Footer'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css'
@@ -6,8 +7,8 @@ import './App.css'
 function App () {
   return (
     <div className='mx-1-auto'>
-      <Container fluid>
-        <Container className=' '>
+      <Container>
+        <Container className=''>
           <div class='p-3 d-flex flex-row rounded bg-primary text-white text-center'>
             <div class='logo'>
               <img src='imges/11zon_cropped.png' alt='person' />
@@ -20,9 +21,10 @@ function App () {
             </div>
           </div>
         </Container>
-      </Container>
 
-      <Footer />
+        <Navbar />
+        <Footer />
+      </Container>
     </div>
   )
 }
