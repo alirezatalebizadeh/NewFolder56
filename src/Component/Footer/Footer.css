@@ -1,0 +1,65 @@
+.footer-sotial-media {
+    width: 100%;
+    display: flex;
+    justify-content: center
+}
+
+.footer-sotial-media .btn {
+    position: inline-block;
+    width: 60px;
+    height: 60px;
+    background-color: #e9c6c6;
+    color: #1b1b1b;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+    border-radius: 50%
+}
+
+#relation a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn:hover i {
+    transform: scale(1.5)
+}
+
+.footer-sotial-media i {
+    position: relative;
+    z-index: 4;
+    font-size: 25px;
+    transition: .3s ease-in-out
+}
+
+#ul-navbar li {
+    display: none
+}
+
+.black {
+    color: #000
+}
+
+.green {
+    color: green
+}
+
+.orange {
+    color: red
+}
+
+.white {
+    color: #fff
+}
+
+.blue {
+    color: blue
+}
+
+.yellow {
+    color: yellow
+}
