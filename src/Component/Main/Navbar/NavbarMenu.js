@@ -27,22 +27,33 @@ export default function NavbarMenu () {
         <Navbar.Brand href='#home'>علیرضا طالبی زاده</Navbar.Brand>
         <Navbar.Toggle aria-controls='responsive-navbar-nav' />
         <Navbar.Collapse id='responsive-navbar-nav'>
-          <Nav className='me-auto'>
-            <Nav.Link href='#deets'>مهارت ها</Nav.Link>
-            <Nav.Link href='#deets'>ارتباط با من</Nav.Link>
-          </Nav>
+          <Nav className='me-auto'></Nav>
           <Nav>
-            <Nav.Link href='#deets'>
+            <Nav.Link href='#deets' >
               {theme === 'dark' ? (
                 <BsSun onClick={toggleTheme} />
               ) : (
-                <MdDarkMode onClick={toggleTheme}/>
+                <MdDarkMode onClick={toggleTheme} />
               )}
             </Nav.Link>
-            <Nav.Link href='#deets'> علاقه مندی ها</Nav.Link>
-            <Nav.Link href='#deets'> سوابق کاری</Nav.Link>
-            <Nav.Link href='#deets'>مهارت ها</Nav.Link>
-            <Nav.Link eventKey={2} href='#memes'>
+            <Nav.Link href='#deets' className='text-primary'>
+              مهارت ها
+            </Nav.Link>
+            <Nav.Link href='#deets' className='text-primary'>
+              ارتباط با من
+            </Nav.Link>
+            <Nav.Link href='#deets' className='text-primary'>
+              {' '}
+              علاقه مندی ها
+            </Nav.Link>
+            <Nav.Link href='#deets' className='text-primary'>
+              {' '}
+              سوابق کاری
+            </Nav.Link>
+            <Nav.Link href='#deets' className='text-primary'>
+              مهارت ها
+            </Nav.Link>
+            <Nav.Link eventKey={2} href='#memes'  className='text-primary'>
               درباره من
             </Nav.Link>
           </Nav>
@@ -51,74 +62,3 @@ export default function NavbarMenu () {
     </Navbar>
   )
 }
-
-// ;<Container className='container-fluid mt-2'>
-//   <nav
-//     className='navbar navbar-expand-md bg-dark sticky-top rounded-3'
-//     dir='ltr'
-//   >
-//     <div className='container-fluid'>
-//       <a className='navbar-brand text-white' href='#'>
-//         Alireza Talebizadeh
-//       </a>
-//       <button
-//         className='navbar-toggler'
-//         type='button'
-//         data-bs-toggle='collapse'
-//         data-bs-target='#collapsibleNavbar'
-//       >
-//         <span className='navbar-toggler-icon bg-white rounded '></span>
-//       </button>
-//       <div
-//         className='collapse justify-content-end navbar-collapse'
-//         id='collapsibleNavbar'
-//       >
-//         <ul className='navbar-nav'>
-//           <li className='nav-item'>
-//             <a className='nav-link' href='#about-me'>
-//               <span className='dark-mode-trigger'>
-//                 <span className='material-symbols-outlined white'>
-//                   {theme === 'light' ? (
-//                     <MdDarkMode onClick={toggleTheme} />
-//                   ) : (
-//                     <BsSun onClick={toggleTheme} />
-//                   )}
-//                 </span>
-//               </span>
-//             </a>
-//           </li>
-//           <li className='nav-item'>
-//             <a className='nav-link' href='#detail-person'>
-//               مشخصات فردی
-//             </a>
-//           </li>
-//           <li className='nav-item'>
-//             <a className='nav-link' href='#relation'>
-//               ارتباط با من
-//             </a>
-//           </li>
-//           <li className='nav-item'>
-//             <a className='nav-link' href='#'>
-//               علاقه مندی ها
-//             </a>
-//           </li>
-//           <li className='nav-item'>
-//             <a className='nav-link' href='#job'>
-//               سوابق کاری
-//             </a>
-//           </li>
-//           <li className='nav-item'>
-//             <a className='nav-link' href='#skills'>
-//               مهارت ها
-//             </a>
-//           </li>
-//           <li className='nav-item'>
-//             <a className='nav-link' href='#about-me'>
-//               درباره من
-//             </a>
-//           </li>
-//         </ul>
-//       </div>
-//     </div>
-//   </nav>
-// </Container>
